@@ -168,3 +168,8 @@ This project provides a scalable and real-time fraud detection system using Kafk
 - Integrate real-time alerting system
 - Deploy on Kubernetes for scalability
 
+---
+
+Feel free to contribute and enhance this project!
+
+---

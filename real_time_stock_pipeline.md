@@ -133,5 +133,9 @@ GROUP BY symbol;
 ✅ Implement **ML-based price forecasting**
 ✅ Add **real-time alert notifications**
 
+---
 
+Feel free to contribute and enhance this project!
+
+---
 

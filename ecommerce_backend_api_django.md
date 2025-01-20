@@ -101,3 +101,8 @@ python manage.py test
 ## Conclusion
 This project demonstrates how to build a scalable and cloud-deployed e-commerce backend using Django, PostgreSQL, and GCP Cloud Run. Feel free to contribute and enhance its functionalities!
 
+---
+
+Feel free to contribute and enhance this project!
+
+---
