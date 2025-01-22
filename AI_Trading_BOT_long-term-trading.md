@@ -1,6 +1,6 @@
 # Building a Free End-to-End AI Trading Bot
 
-This guide walks you through building a **free end-to-end AI trading bot** that predicts stock price movements and executes trades automatically using free tools and services wherever possible.
+This guide walks you through building a **free end-to-end AI trading bot** that predicts stock price movements and executes trades automatically using free tools and services wherever possible. Additionally, we cover how to enable **live trading with real money** safely.
 
 ---
 
@@ -93,18 +93,22 @@ cerebro.plot()
 
 ---
 
-## **6. Execute Trades Using Free Alpaca API**
+## **6. Execute Trades Using Alpaca API**
 ### **6.1 Setup Alpaca API**
-1. **Sign up at** [Alpaca](https://alpaca.markets/) (free).  
+1. **Sign up at** [Alpaca](https://alpaca.markets/).  
 2. **Get API Key & Secret** (from dashboard).  
 3. **Use API to place orders**  
+
+#### **6.2 Live Trading with Real Money**
+1. **Upgrade to a Live Trading Account** on Alpaca.  
+2. **Replace Paper Trading API with Live Trading API**:
 
 ```python
 import alpaca_trade_api as tradeapi  
 
-API_KEY = "YOUR_ALPACA_API_KEY"  
-SECRET_KEY = "YOUR_ALPACA_SECRET_KEY"  
-BASE_URL = "https://paper-api.alpaca.markets"  
+API_KEY = "YOUR_ALPACA_LIVE_API_KEY"  
+SECRET_KEY = "YOUR_ALPACA_LIVE_SECRET_KEY"  
+BASE_URL = "https://api.alpaca.markets"  # Use live URL instead of paper API
 
 api = tradeapi.REST(API_KEY, SECRET_KEY, BASE_URL, api_version="v2")  
 
@@ -115,9 +119,9 @@ api.submit_order(
     type="market",  
     time_in_force="gtc"  
 )  
-print("Trade Executed!")  
+print("Live Trade Executed!")  
 ```
-- **Free tools used**: Alpaca (free paper trading accounts, no commission fees).
+- **Live trading enabled**: Use real money (ensure you have funds in your Alpaca account).
 
 ---
 
@@ -165,12 +169,13 @@ streamlit run dashboard.py
 
 ---
 
-## **🚀 Final Checklist for Free AI Trading Bot**
+## **🚀 Final Checklist for AI Trading Bot**
 ✅ **Stock Data Fetching (Yahoo Finance, Free)**  
 ✅ **Technical Indicators (RSI, MACD, Free)**  
 ✅ **AI Model for Prediction (Random Forest, Free)**  
 ✅ **Backtesting (Backtrader, Free)**  
-✅ **Trade Execution (Alpaca Paper Trading, Free)**  
+✅ **Trade Execution (Alpaca, Free for Paper & Live Trading)**  
+✅ **Live Trading with Real Money (Alpaca, Requires Funding)**  
 ✅ **Cloud Deployment (GCP Free Tier, Free)**  
 ✅ **Automated Execution (Cron Jobs, Free)**  
 ✅ **Live Dashboard (Streamlit, Free)**  
@@ -181,7 +186,7 @@ streamlit run dashboard.py
 Would you like:
 1. **A GitHub repo template with all this code?**  
 2. **More advanced models (LSTM, Reinforcement Learning)?**  
-3. **Live trading integration with real money?**  
+3. **Integration with additional brokers (Interactive Brokers, TD Ameritrade)?**  
 
 Let me know how you'd like to proceed! 🚀
 
