@@ -114,13 +114,9 @@ gcloud run deploy ecommerce-api --image gcr.io/your-project-id/ecommerce-api --p
 - Add WebSocket for real-time order tracking
 - Integrate AI-based product recommendations
 
-## License
-This project is licensed under the MIT License.
-
 ---
 
-### Contributors
-- **Your Name** - [GitHub Profile](https://github.com/yourgithubhandle)
+Feel free to contribute and enhance this project!
 
-Happy Coding! 🚀
+---
 
