@@ -188,5 +188,5 @@ Would you like:
 2. **More advanced models (LSTM, Reinforcement Learning)?**  
 3. **Integration with additional brokers (Interactive Brokers, TD Ameritrade)?**  
 
-Let me know how you'd like to proceed! 🚀
+
 
